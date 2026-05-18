@@ -1,0 +1,9 @@
+﻿*.exe
+*.o
+*.obj
+01_ponteiros_basico
+02_passagem_referencia
+03_inspecao_bytes
+busca_binaria
+.vscode/
+.idea/
