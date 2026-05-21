@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int somaVetorRec(int v[], int ini, int fim) {
+    // Caso Base: Vetor vazio ou índices ultrapassados
+    if (ini > fim) {
+        return 0;
+    }
+    return v[ini] + somaVetorRec(v, ini + 1, fim);
+}
+
+int main() {
+    int vet[4] = {1, 2, 3, 4};
+    int total = somaVetorRec(vet, 0, 3);
+    
+    printf("Soma total do vetor = %d\n", total);
+    return 0;
+}
